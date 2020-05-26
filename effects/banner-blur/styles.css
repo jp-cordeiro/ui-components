@@ -1,0 +1,42 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+section{
+  width: 100%;
+  height: 100vh;
+}
+
+section .layer2{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(./travel.jpg) no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  transition: 2s;
+}
+
+.layer1:hover ~ .layer2{
+  filter: blur(10px);
+}
+
+section .layer1{
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 750px;
+  height: 250px;
+  background: url(./travel.jpg);
+  background-position: center;
+  z-index: 1;
+  transition: 1s;
+}
+
+.layer1:hover{
+  box-shadow: 0 25px 60px rgba(0,0,0,.8);
+}
