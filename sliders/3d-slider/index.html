@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <title>3D Slider</title>
+</head>
+<body>
+
+   <!-- Swiper -->
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="./../images/detroit-become-human.jpg" alt="Detroit Become Human">
+      </div>
+      <div class="swiper-slide">
+        <img src="./../images/monster-hunter.jpg" alt="Monster Hunter World">
+      </div>
+      <div class="swiper-slide">
+        <img src="./../images/horizon-zero-dawn.jpg" alt="Horizon Zero Dawn">
+      </div>
+      <div class="swiper-slide">
+        <img src="./../images/the-witcher-3.jpg" alt="The Witcher 3">
+      </div>
+      <div class="swiper-slide">
+        <img src="./../images/uncharted-4.jpg" alt="Uncharted 4">
+      </div>
+      <div class="swiper-slide">
+        <img src="./../images/star-wars.jpg" alt="Star Wars Jedi: Fallen Order">
+      </div>
+      <div class="swiper-slide">
+        <img src="./../images/ff7-remake.jpg" alt="Star Wars Jedi: Fallen Order">
+      </div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 20,
+        stretch: 0,
+        depth: 200,
+        modifier: 1,
+        slideShadows : true,
+      },
+      loop: true,
+      autoplay: {
+        delay: 1500,
+        disableOnInteraction: false,
+      },
+    });
+  </script>
+</body>
+</html>
