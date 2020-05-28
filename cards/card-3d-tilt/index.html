@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <title>Card 3D</title>
+</head>
+<body>
+  <div class="container">
+    <div class="box">
+      <div class="imgBox">
+        <img src="./images/dev-sites.jpg" alt="Desenvolvimento de Sites">
+      </div>
+      <div class="contentBox">
+        <h2>Desenvolvimento de Sites</h2>
+        <p>Desenvolvemos sites criativos, chamativos e que impulsionem suas vendas e bastante engajamento no segmento a qual você opera.</p>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="imgBox">
+        <img src="./images/sist-apps.jpeg" alt="Desenvolvimento de Sites">
+      </div>
+      <div class="contentBox">
+        <h2>Desenvolvimento de Sistemas</h2>
+        <p>Desenvolvemos sistemas elegantes, rápidos e intuitivos, customizados e modelados especificamente para o seu negócio.</p>
+      </div>
+    </div>    
+  </div>
+  <script type="text/javascript" src="vanilla-tilt.js"></script>
+  <script type="text/javascript">
+    VanillaTilt.init(document.querySelectorAll(".box"), {
+      max: 25,
+      speed: 400
+    });
+  </script>
+</body>
+</html>
