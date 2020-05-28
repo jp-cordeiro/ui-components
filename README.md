@@ -8,6 +8,7 @@
 ### Card-animated: https://jp-cordeiro.github.io/ui-components/cards/card-animated/
 
 ### Card-3D-Tilt: https://jp-cordeiro.github.io/ui-components/cards/card-3d-tilt/
+* Library utilized: https://micku7zu.github.io/vanilla-tilt.js/
 
 ## Sliders
 
